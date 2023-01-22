@@ -1,0 +1,168 @@
+{
+  "patches": {
+    "@/main": {
+      "nodes": {
+        "HkXHUGdio": {
+          "id": "HkXHUGdio",
+          "type": "xod/core/clock",
+          "position": {
+            "x": 0,
+            "y": -1,
+            "units": "slots"
+          }
+        },
+        "HyaHLz_ss": {
+          "id": "HyaHLz_ss",
+          "type": "xod/common-hardware/analog-sensor",
+          "position": {
+            "x": -1,
+            "y": 0,
+            "units": "slots"
+          }
+        },
+        "B1qO8MOii": {
+          "id": "B1qO8MOii",
+          "type": "xod/core/subtract",
+          "position": {
+            "x": -3,
+            "y": 1,
+            "units": "slots"
+          },
+          "boundLiterals": {
+            "BypX80uSD1Z": "1"
+          }
+        },
+        "HJ-Y8zdii": {
+          "id": "HJ-Y8zdii",
+          "type": "xod/common-hardware/led",
+          "position": {
+            "x": -2,
+            "y": 2,
+            "units": "slots"
+          },
+          "boundLiterals": {
+            "B1oqkTnIb": "D11"
+          }
+        },
+        "HyOt8GOis": {
+          "id": "HyOt8GOis",
+          "type": "xod/debug/watch",
+          "position": {
+            "x": -4,
+            "y": 2,
+            "units": "slots"
+          }
+        },
+        "Syuq8zOoj": {
+          "id": "Syuq8zOoj",
+          "type": "xod/debug/watch",
+          "position": {
+            "x": 1,
+            "y": 1,
+            "units": "slots"
+          }
+        },
+        "ByQoLMOio": {
+          "id": "ByQoLMOio",
+          "type": "xod/debug/watch",
+          "position": {
+            "x": 6,
+            "y": 2,
+            "units": "slots"
+          }
+        },
+        "SyPAIGdio": {
+          "id": "SyPAIGdio",
+          "type": "gweimer/utils/running-avg",
+          "position": {
+            "x": 3,
+            "y": 1,
+            "units": "slots"
+          },
+          "arityLevel": 5
+        }
+      },
+      "links": {
+        "rkt1wzuoi": {
+          "id": "rkt1wzuoi",
+          "output": {
+            "nodeId": "HkXHUGdio",
+            "pinKey": "HJU8CE2lW"
+          },
+          "input": {
+            "nodeId": "HyaHLz_ss",
+            "pinKey": "SkUhQ5RkQ"
+          }
+        },
+        "r10JPz_so": {
+          "id": "r10JPz_so",
+          "output": {
+            "nodeId": "HyaHLz_ss",
+            "pinKey": "BkoeN9Ay7"
+          },
+          "input": {
+            "nodeId": "B1qO8MOii",
+            "pinKey": "rkJ4URuHDJ-"
+          }
+        },
+        "rylgvGOio": {
+          "id": "rylgvGOio",
+          "output": {
+            "nodeId": "HyaHLz_ss",
+            "pinKey": "BkoeN9Ay7"
+          },
+          "input": {
+            "nodeId": "Syuq8zOoj",
+            "pinKey": "HkXK-dGob"
+          }
+        },
+        "BJSgvf_ji": {
+          "id": "BJSgvf_ji",
+          "output": {
+            "nodeId": "HyaHLz_ss",
+            "pinKey": "BkoeN9Ay7"
+          },
+          "input": {
+            "nodeId": "SyPAIGdio",
+            "pinKey": "ry1jOvRTz"
+          }
+        },
+        "rydZPfOos": {
+          "id": "rydZPfOos",
+          "output": {
+            "nodeId": "B1qO8MOii",
+            "pinKey": "HyRmUCdBDkZ"
+          },
+          "input": {
+            "nodeId": "HJ-Y8zdii",
+            "pinKey": "HyYh1a3LZ"
+          }
+        },
+        "r1o-vM_oo": {
+          "id": "r1o-vM_oo",
+          "output": {
+            "nodeId": "B1qO8MOii",
+            "pinKey": "HyRmUCdBDkZ"
+          },
+          "input": {
+            "nodeId": "HyOt8GOis",
+            "pinKey": "HkXK-dGob"
+          }
+        },
+        "rknmwGdoi": {
+          "id": "rknmwGdoi",
+          "output": {
+            "nodeId": "SyPAIGdio",
+            "pinKey": "Sy6dFwR6z"
+          },
+          "input": {
+            "nodeId": "ByQoLMOio",
+            "pinKey": "HkXK-dGob"
+          }
+        }
+      },
+      "path": "@/main"
+    }
+  },
+  "name": "brightness---katerina"
+}
